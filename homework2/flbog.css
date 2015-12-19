@@ -1,0 +1,58 @@
+body {
+	font-family: Lato, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 10%;
+	width: 80%;
+	max-width: 1024px;
+  margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+h1 {
+	font-size: 36pt;
+	color: #C00;
+	display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+}
+
+header nav a{
+	color: #fff;
+	font-size: 14pt;
+	background-color: #000000;
+	margin: 0 2px 2px 0;
+	padding: 10px 20px;
+}
+
+.left {
+  float: left;
+  width: 70%;
+}
+
+.right {
+  float: right;
+  width: 30%;
+}
+
+footer {
+  float:left;
+  font-size: 12pt;
+}
