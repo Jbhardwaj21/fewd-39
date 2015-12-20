@@ -1,0 +1,12 @@
+#selected-plays {
+  background-color: #C0C0C0
+}
+
+.large-title {
+  font-size: 3em;
+  margin-bottom: 0 0 10px 0;
+}
+
+td:nth-child(3) {
+  background-color: gray;
+}
