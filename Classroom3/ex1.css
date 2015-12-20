@@ -1,0 +1,28 @@
+/* Ex1 */
+div {
+  border: 1px black solid;
+}
+#box1 {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  /*margin: 0 auto;*/
+}
+#box2 {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+}
+#box3 {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  top: 100%;
+  left: 100%;
+}
+
+<br>
+<br>
+<br>
