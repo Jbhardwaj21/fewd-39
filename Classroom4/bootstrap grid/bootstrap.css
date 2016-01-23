@@ -1,0 +1,26 @@
+.row {
+  margin: 0;
+}
+.col-md-1 {
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: grey;
+}
+
+.col-md-4 {
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: grey;
+}
+
+.col-md-6 {
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: grey;
+}
+
+.col-md-8 {
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: grey;
+}
