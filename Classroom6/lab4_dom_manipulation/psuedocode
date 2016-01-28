@@ -1,0 +1,9 @@
+1.) prompt for a todo
+    var todo = prompt ("what do you want to do")
+2.) create list item
+  var listItem = document.createElement ("li")
+
+  decorate the listItem with the value from your prompt. (using textContent)
+3.) add it to the list. (append it)
+  grab the parent
+  append the child to the parent
