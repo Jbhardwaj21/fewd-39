@@ -1,5 +1,4 @@
 var currentTurn = "O";
-
 var spaces = document.getElementsByTagName("td");
 
 for (var i = 0; i < 9; i++) {
