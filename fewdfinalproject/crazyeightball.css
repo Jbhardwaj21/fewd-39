@@ -87,6 +87,7 @@ span .b1 {
 .button {
   /* POSITIONING */
   padding: 30px;
+  margin-left: 80px;
   top: -200px;
   border-radius: 8px;
   position: relative;
