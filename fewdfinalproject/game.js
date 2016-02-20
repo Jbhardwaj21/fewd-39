@@ -1,18 +1,18 @@
-var myGamePiece;
-var myObstacles = [];
+var player;
+var rods = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "black", 10, 120);
+    player = new component(20, 20, "black", 5, 120);
     myGameArea.start();
-    myScore = new component("10px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("10px", "Consolas", "black", 2, 10, "text");
 }
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 450;
+        this.canvas.height = 300;
         this.context = this.canvas.getContext("2d");
 document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -69,8 +69,8 @@ function component(width, height, color, x, y, type) {
 
 function updateGameArea() {
     var x, y;
-    for (i = 0; i < myObstacles.length; i += 1) {
-        if (myGamePiece.crashWith(myObstacles[i])) {
+    for (i = 0; i < rods.length; i += 1) {
+        if (player.crashWith(rods[i])) {
             myGameArea.stop();
             return;
         }
@@ -80,16 +80,16 @@ function updateGameArea() {
     if (myGameArea.frameNo == 1 || everyinterval(150)) {
         x = myGameArea.canvas.width;
         y = myGameArea.canvas.height - 200;
-        myObstacles.push(new component(10, 200, "blue", x, y));
+        rods.push(new component(10, 200, "blue", x, y));
     }
-    for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].x += -1;
-        myObstacles[i].update();
+    for (i = 0; i < rods.length; i += 1) {
+        rods[i].x += -1;
+        rods[i].update();
     }
-    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.text="SCORE: " +    myGameArea.frameNo;
     myScore.update();
-    myGamePiece.newPos();
-    myGamePiece.update();
+    player.newPos();
+    player.update();
 }
 
 function everyinterval(n) {
@@ -98,22 +98,17 @@ function everyinterval(n) {
 }
 
 function moveup() {
-    myGamePiece.speedY = -1;
+    player.speedY -= 1;
 }
 
 function movedown() {
-    myGamePiece.speedY = 1;
+    player.speedY += 1;
 }
 
 function moveleft() {
-    myGamePiece.speedX = -1;
+    player.speedX -= 1;
 }
 
 function moveright() {
-    myGamePiece.speedX = 1;
-}
-
-function clearmove() {
-    myGamePiece.speedX = 0;
-    myGamePiece.speedY = 0;
+    player.speedX += 1;
 }
