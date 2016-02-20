@@ -1,0 +1,151 @@
+body {
+  background-color: black;
+  max-width: 100%;
+  max-length: 100%;
+}
+
+
+h1 {
+font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-size: 70px;
+line-height: 29.4px;
+color: white;
+text-align: center;
+letter-spacing: 6px;
+height: 5em;
+display: flex;
+align-items: center;
+justify-content: center;
+position: ;
+  }
+
+#b1 {
+  height: 220px;
+  width: 220px;
+  background: #a10000;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+#b2 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 7px solid #a10000;
+  border-radius: 50%;
+  transition: all .8s ease-out;
+  top: -0px;
+}
+
+#b3 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 7px solid #a10000;
+  border-radius: 50%;
+  transition: all .8s ease;
+  top: 0px;
+}
+
+#b1:hover #b2 {
+  transform: rotateX(360deg)
+}
+
+#b1:hover #b3 {
+  transform: rotateY(360deg)
+}
+
+#b1:hover {
+  background: transparent;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .7) inset;
+}
+
+#b1:hover a {
+  color: #a10000;
+}
+
+#b1 a {
+  font-family: Avant Garde,Avantgarde,Century     Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-size: 70px;
+  color: #fff;
+  line-height: 200px;
+  text-decoration: none;
+  transition: all .8s ease;
+  text-transform: uppercase;
+}
+
+.normal {
+  padding:8px;
+  margin:8px;
+}
+
+span .b1 {
+  margin: 8px;
+}
+
+.button {
+  /* POSITIONING */
+  padding: 30px;
+  top: -200px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* BUTTON STYLING */
+  border-top: 1px solid #fff;
+  box-shadow: 0 5px 8px #002851, 0 8px 0 #002851, -2px 1px 0 #003872, 2px 1px 0 #003872, 0px 8px 10px #000, 0 10px 30px #1b1b1b;
+
+  /* FONT STYLING */
+  font: bold 20px 'Trebuchet Ms', helvetica;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-shadow: -1px -1px 1px black,1px 1px 1px #a1cfff;
+  color: black;
+}
+
+.button:hover {
+  /* BUTTON SHADOW */
+ box-shadow: 0 6px 6px grey, 0 6px 0 #002851, -1px 0px 0 grey, 0px 0px 0 #003872, 0px 7px 8px red, 0 7px 20px #1b1b1b;
+}
+
+.button:active {
+  border-top: 1px solid grey;
+  /* BUTTON SHADOW */
+ box-shadow: 0 0px 0px #002851, 0 3px 0 #002851, 0px 0px 0 #003872, 0px 0px 0 #003872, 0px 2px 4px #000, 0 2px 10px #1b1b1b;
+}
+
+/* BLUE GRADIENT ON BUTTON */
+.grad {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(114,184,255,1)), color-stop(100%,rgba(64,150,238,1)));
+  background: linear-gradient(to bottom, rgba(114,184,255,1) 0%,rgba(64,150,238,1) 100%);
+}
+
+/* ANIMATE THE BUTTON */
+.transition,
+.transition:hover,
+.transition:active{
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.highlight {
+  position: relative;
+  margin: -200px auto 0 auto;
+  width: 500px;
+  height: 400px;
+  opacity: 0.4;
+background: -moz-radial-gradient(top, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(radial, top top, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+background: -webkit-radial-gradient(top, ellipse cover, rgba(255,255,255,0.3) 0px,rgba(255,255,255,0) 275px);
+}
+
+p {
+  padding-top: 170px;
+  display: flex;
+  justify-content: center;
+}

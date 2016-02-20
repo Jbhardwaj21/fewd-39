@@ -1,8 +1,0 @@
-api -- url -- returns results
-results are in JSON
-
-results ["Search"] === array
-
-array[0] == object
-
-array[0].Title = "Terminator 2: Judgment"

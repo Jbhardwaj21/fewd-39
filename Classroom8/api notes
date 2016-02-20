@@ -1,0 +1,19 @@
+api -- url -- returns results
+results are in JSON
+
+results ["Search"] === array
+
+array[0] == object
+
+array[0].Title = "Terminator 2: Judgment"
+
+
+var results = movieApiJSON
+(results)
+
+results["Search"][1].Type = "movie"
+
+
+**whatever array you have a for each method is loop through an array**
+
+array.forEach()
